@@ -11,6 +11,8 @@ let tests = "bowling score" >:::
         assert_equal ~printer: string_of_int 10 (score [3;2;4;1]));
     ("given a spare then the next roll is added as bonus" >:: fun _ ->
         assert_equal ~printer: string_of_int 14 (score [4;6;2]));
+    ("given a strike then the two next rolls are added as bonus" >:: fun _ ->
+        assert_equal ~printer: string_of_int 26 (score [10;4;3;2]));
     ]
 
 let _ = run_test_tt_main tests
