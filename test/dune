@@ -1,3 +1,4 @@
 (test
  (name test_ocaml_bowling_score)
- (libraries ocaml_bowling_score))
+ (modules test_ocaml_bowling_score)
+ (libraries ounit2 ocaml_bowling_score))
