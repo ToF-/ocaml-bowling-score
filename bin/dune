@@ -1,0 +1,4 @@
+(executable
+ (public_name ocaml-bowling-score)
+ (name main)
+ (libraries ocaml_bowling_score))
